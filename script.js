@@ -43,8 +43,8 @@ new Thread(() => {
 
     Object.values(data).forEach(frame => {
         frame.push("\ndebuggings.dev"); // free advertisement. You can remove this line if you want.
-        let item = NBTLib.createStack("stone", "§fStone", frame, 1, 0, false);
-        NBTLib.addItem(36, item.getItemStack());
+        let item = createStack("stone", "§fStone", frame, 1, 0, false);
+        addItem(36, item.getItemStack());
 
         Thread.sleep(100);
     });
